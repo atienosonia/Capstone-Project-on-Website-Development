@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: burlywood;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: lightgrey;
+                display: flex;
+                justify-content: center;
+            }
+            .topnav a{
+                
+                color:rebeccapurple;
+                text-align:center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size:17px
+            }
+            .topnav a:hover{
+                background-color:orchid;
+                color:darkseagreen;
+            }
+            .topnav a.active{
+                background-color: peru;
+                color:indigo;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                text-transform: capitalize ;
+            }
+            .carousel-container{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                
+            }
+            .section-dark{
+                
+                color: #1daa5d;
+                text-align: center;
+            }
+            .footer{
+            
+                background-color: violet;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- let's create a navigation bar -->
+        <div class = "topnav">
+            <a class = "active" href="#home">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us </a>
+            <a href="#">Gallery</a>
+        </div>
+
+        <!-- now let's add the slide show -->
+    <h1>Wonderland Flower Shop</h1>
+    <div class="carousel-container">
+        <img class="myslides" src="daisies.jpg" alt="slide1" height="500px" width="500px">
+        <img class="myslides" src="lilies.jpg" alt="slide2" height="500px" width="500px">
+        <img class="myslides" src="sunflower.jpg" alt="slide3" height="500px" width="500px">
+        <img class="myslides" src="orchids.jpg" alt="slide3" height="500px" width="500px">
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- now let's add some content -->
+
+
+    <span class = "border trans" style = "font-size: 40px;">
+        <center>Welcome</center>
+
+    </span><br>
+    <section class = "section section-dark">
+        <h2> Hello stranger, </h2>
+        <p> Wonderland Flower Shop is the best flower shop in town.
+            We provide fresh flowers at affordable prices.
+            We have a wide variety of flowers to choose from.
+            We also provide flower delivery services.
+            Visit us today and get a special discount on your first purchase!
+        </p>
+    </section>
+    <div class = "footer">
+        <p> &copy All rights reserved</p>
+    </div>
+    
+    </body>
+</html>
