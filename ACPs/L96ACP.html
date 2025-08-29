@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: burlywood;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: lightgrey;
+                display: flex;
+                justify-content: center;
+            }
+            .topnav a{
+                color:rebeccapurple;
+                text-align:center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size:17px;
+            }
+            .topnav a:hover{
+                background-color:orchid;
+                color:darkseagreen;
+            }
+            .topnav a.active{
+                background-color: peru;
+                color:indigo;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                text-transform: capitalize ;
+            }
+            .carousel-container{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+            }
+            .section-dark{
+                color: #1daa5d;
+                text-align: center;
+                padding: 20px;
+            }
+            .contact-section {
+                background-color: #f2f2f2;
+                padding: 30px;
+                margin: 20px auto;
+                width: 60%;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+            .contact-section h2 {
+                text-align: center;
+                color: rebeccapurple;
+            }
+            .contact-section form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .contact-section input, 
+            .contact-section textarea {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+                width: 100%;
+            }
+            .contact-section button {
+                padding: 12px;
+                background-color: peru;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .contact-section button:hover {
+                background-color: rebeccapurple;
+            }
+            .footer{
+                background-color: violet;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+
+        <!-- Title -->
+        <h1>Wonderland Flower Shop</h1>
+
+        <!-- Slideshow -->
+        <div class="carousel-container">
+            <img class="myslides" src="daisies.jpg" alt="slide1" height="500px" width="500px">
+            <img class="myslides" src="lilies.jpg" alt="slide2" height="500px" width="500px">
+            <img class="myslides" src="sunflower.jpg" alt="slide3" height="500px" width="500px">
+            <img class="myslides" src="orchids.jpg" alt="slide4" height="500px" width="500px">
+        </div>
+
+        <script src="script.js"></script>
+
+        <!-- Content -->
+        <span class="border trans" style="font-size: 40px;">
+            <center>Welcome</center>
+        </span><br>
+
+        <section class="section section-dark" id="about">
+            <h2>Hello stranger,</h2>
+            <p> Wonderland Flower Shop is the best flower shop in town.
+                We provide fresh flowers at affordable prices.
+                We have a wide variety of flowers to choose from.
+                We also provide flower delivery services.
+                Visit us today and get a special discount on your first purchase!
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; All rights reserved</p>
+        </div>
+    </body>
+</html>
